@@ -1,0 +1,104 @@
+@import url('http://fonts.cdnfonts.com/css/neo-latina');
+
+.about_font{
+    font-family: 'neo latina', sans-serif;
+}
+
+.about_content_outer{
+    margin-left: -30px;
+    margin-right: 10px;
+}
+
+.about_outer{
+    display: flex;
+    flex-direction: row;
+}
+
+.about_svg_outer{
+    flex-basis: 60%;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.about_svg_inner{
+    width: 60%;
+    
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.about_content_outer{
+    flex-basis: 40%;
+}
+
+.about_content_outer_box{
+    margin-top: 4rem;
+    background-color: rgb(248 113 113);
+    border-radius: 0.75rem;
+    margin-right: 2rem ;
+    height: 30rem;
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.about_content_inner{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1.25rem;
+    text-align: justify;
+}
+.scrollUp{
+    position: fixed;
+    right: 4rem;
+    bottom: 4rem;
+    cursor: pointer;
+    
+}
+
+@media (min-width:320px) and (max-width:425px){
+    .about_content_outer{
+        margin:10px;
+    }
+    
+    .about_outer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about_svg_outer{
+        flex-basis: 100%;
+        width: 100%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    
+    .about_svg_inner{
+        width: 100%;
+    }
+    
+    .about_content_outer{
+        flex-basis: 100%;
+    }
+    
+    .about_content_outer_box{
+        background-color: rgb(248 113 113);
+        border-radius: 0.75rem;
+        height: fit-content;
+    }
+    
+    .about_content_inner{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin: 1rem;
+    }
+}
+
+.home_inner_content_font_society{
+    text-align: center;
+   
+
+}

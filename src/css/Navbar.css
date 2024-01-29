@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.font{
+    font-family: 'Fira Code', monospace;
+}
+
+.navbar_outer{
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar_left{
+    margin-top: 0.5rem;
+    margin-left: 1.75rem;
+    width: 4rem;
+}
+
+.navbar_right{
+    width: fit-content;
+    height: 4rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+}
+
+.navbar_right_content{
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    margin: 0.75rem;
+    width: fit;
+    margin-right: 1.5rem;
+}
+
+.view{
+    display: none;
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .navbar_outer{
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .navbar_left{
+        margin-top: 0.5rem;
+        margin-left: 1.75rem;
+        width: 4rem;
+    }
+    
+    .navbar_right{
+        width: fit-content;
+        height: 4rem;
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        margin-right: 0.5rem;
+    }
+    
+    .navbar_right_content{
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        margin: 0.75rem;
+        width: fit;
+        margin-right: 0.75rem;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px){
+    .navbar_outer{
+        height: 4.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .navbar_left{
+        margin-top: 0.4rem;
+        margin-left: 1rem;
+        width: 3.75rem;
+    }
+    
+    .navbar_right{
+        width: fit-content;
+        height: 4rem;
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        margin-right: 0.25rem;
+    }
+    
+    .navbar_right_content{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 0.75rem;
+        width: fit;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (min-width:0px) and (max-width:426px){
+    .navbar_outer{
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    
+    .navbar_left{
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        width: 4rem;
+    }
+
+    .view_mobile{
+        display: none;
+    }
+
+    .view{
+        display: block;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+      }
+    #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::before {
+       top: 0;
+       transform: rotate(0deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        left: 0 !important;
+    }
+    .menu__btn {
+        position: fixed;
+        top: 38px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #f01d1d;
+        transition-duration: .25s;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 200px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: #ECEFF1;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+    }
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+    }
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+}

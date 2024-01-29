@@ -1,0 +1,205 @@
+@import url('https://fonts.cdnfonts.com/css/battle-angel');
+@import url('http://fonts.cdnfonts.com/css/neo-latina');
+
+.font{
+    font-family: 'neo latina', sans-serif;
+}
+
+.font_society{
+    font-family: 'Battle Angel', sans-serif;
+}
+
+.set{
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.home_outer{
+    position: relative;
+}
+
+.home_inner{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8rem;
+}
+
+.home_inner_logo{
+    width: 24rem;
+    margin: auto;
+}
+
+.home_inner_content{
+    color: white;
+    width: fit-content;
+    margin: auto;
+    font-size: 4rem;
+    line-height: 1;
+    margin-top: 1.5rem;
+}
+
+.home_inner_typewriter{
+    width: fit-content;
+    margin: auto;
+    margin-top: 0.75rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: rgb(248 113 113);
+    display: flex;
+    flex-direction: row;
+}
+
+.home_inner_typewriter_gap{
+    margin-right: 0.75rem;
+}
+
+@media (min-width:1025px) and (max-width:1600px){
+    .set{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .home_outer{
+        position: relative;
+    }
+    
+    .home_inner{
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 7rem;
+    }
+    
+    .home_inner_logo{
+        width: 22rem;
+        margin: auto;
+    }
+    
+    .home_inner_content{
+        color: white;
+        width: fit-content;
+        margin: auto;
+        font-size: 3.5rem;
+        line-height: 1;
+        margin-top: 2rem;
+    }
+    
+    .home_inner_typewriter{
+        width: fit-content;
+        margin: auto;
+        margin-top: 0.75rem;
+        font-size: 2.25rem;
+        line-height: 2.5rem; 
+        color: rgb(248 113 113);
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .home_inner_typewriter_gap{
+        margin-right: 0.75rem;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .set{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .home_outer{
+        position: relative;
+    }
+    
+    .home_inner{
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 7rem;
+    }
+    
+    .home_inner_logo{
+        width: 16rem;
+        margin: auto;
+    }
+    
+    .home_inner_content{
+        color: white;
+        width: fit-content;
+        margin: auto;
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-top: 2rem;
+    }
+    
+    .home_inner_typewriter{
+        width: fit-content;
+        margin: auto;
+        margin-top: 0.75rem;
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem;
+        color: rgb(248 113 113);
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .home_inner_typewriter_gap{
+        margin-right: 0.75rem;
+    }
+}
+
+@media (min-width:320px) and (max-width:425px){
+    .set{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .home_outer{
+        position: relative;
+    }
+    
+    .home_inner{
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 7rem;
+    }
+    
+    .home_inner_logo{
+        width: 20rem;
+        margin: auto;
+    }
+    
+    .home_inner_content{
+        color: white;
+        width: 100%;
+        text-align: justify;
+        
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem;
+        margin-top: 2rem;
+    }
+    
+    .home_inner_typewriter{
+        width: fit-content;
+        margin: auto;
+        margin-top: 0.75rem;
+        font-size: 1.25rem; /* 20px */
+line-height: 1.75rem;
+        color: rgb(248 113 113);
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .home_inner_typewriter_gap{
+        margin-right: 0.75rem;
+    }
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
